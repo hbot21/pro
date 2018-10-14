@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('message',async message => {
-	    var prefix = "."
+const prefix = "."
   if(message.author.bot || message.channel.type === 'dm') return;
   let args = message.content.split(' ');
   if(args[0] === `${prefix}bc`) {
